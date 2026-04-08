@@ -1,0 +1,193 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f6fa;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 220px;
+    background: #1e1e2f;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sidebar h2 {
+    color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 12px 0;
+}
+
+.sidebar ul li a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #6c5ce7;
+    color: white;
+}
+
+/* MAIN */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* TITLE */
+.title {
+    margin-bottom: 20px;
+}
+
+/* CARD UMUM */
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* WELCOME */
+.welcome-card {
+    background: linear-gradient(135deg, #c89b5e, #e0c08d);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.profile-img {
+    width: 70px;
+    height: 70px;
+    background: #ddd;
+    border-radius: 50%;
+}
+
+/* BUTTON */
+.btn {
+    background: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* STAT */
+.stats {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.stat {
+    flex: 1;
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* WARNA STAT */
+.green { background: #2ecc71; }
+.purple { background: #8e44ad; }
+.red { background: #e74c3c; }
+.yellow { background: #f1c40f; color: black; }
+
+/* CONTENT */
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+.left { flex: 2; }
+.right { flex: 1; }
+
+/* CHART LINGKARAN */
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 10px auto;
+    background: conic-gradient(
+        blue 0% 50%,
+        orange 50% 75%,
+        pink 75% 100%
+    );
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background: #6c5ce7;
+    color: white;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* FORM */
+input, select {
+    padding: 8px;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* LIST */
+ul {
+    padding-left: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+}
